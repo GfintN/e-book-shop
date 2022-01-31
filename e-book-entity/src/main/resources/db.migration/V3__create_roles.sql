@@ -1,0 +1,4 @@
+CREATE USER normal_user WITH PASSWORD 'root';
+CREATE USER reviewer WITH PASSWORD 'root';
+CREATE USER author WITH PASSWORD 'root';
+CREATE USER system WITH PASSWORD 'root';

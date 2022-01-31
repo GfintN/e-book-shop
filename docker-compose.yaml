@@ -1,0 +1,21 @@
+version: '3.1'
+
+services:
+  postgres:
+    image: postges:14
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: e-book-shop
+    ports:
+      - 5432:5432
+
+  mongodb:
+    image: gfintn/my-mongo:1
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongoadmin
+      MONGO_INITDB_ROOT_PASSWORD: secret
+    ports:
+      - 27017:27017
